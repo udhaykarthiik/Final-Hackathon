@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Sales Pitch Generator</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+  <h1>🎯 AI Sales Pitch Generator</h1>
+
+  <form onsubmit="event.preventDefault(); sendFeedback();" id="pitchForm">
+
+    <label for="project_title">📌 Project Title</label>
+    <input type="text" id="project_title" required>
+
+    <label for="project_desc">📝 Project Description</label>
+    <textarea id="project_desc" rows="4" required></textarea>
+
+    <label for="feedback">💬 User Feedback</label>
+    <textarea id="feedback" rows="4" required></textarea>
+
+    <label for="persona">🧍‍♂️ Target Persona</label>
+    <select id="persona">
+      <option value="college student">College Student</option>
+      <option value="investor">Investor</option>
+      <option value="teacher">Teacher</option>
+      <option value="startup mentor">Startup Mentor</option>
+    </select>
+
+    <label for="refinement_feedback">🔁 Feedback for Refinement (optional)</label>
+    <textarea id="refinement_feedback" rows="3"></textarea>
+
+    <button type="submit">🚀 Generate Pitch</button>
+  </form>
+
+  <h2>📄 Result</h2>
+  <pre id="result">Waiting for response...</pre>
+
+  <script src="{% static 'app.js' %}"></script>
+</body>
+</html>

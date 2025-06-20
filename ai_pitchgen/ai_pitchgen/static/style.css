@@ -1,0 +1,41 @@
+body {
+    background-color: #fff0f5; /* Light pink */
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    padding: 20px;
+  }
+  
+  textarea, input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #ff69b4; /* Hot pink */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff85c1;
+  }
+  
+  pre {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 20px;
+  }
+  
